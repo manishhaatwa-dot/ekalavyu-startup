@@ -1,0 +1,1779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0B120D">
+
+<title>EKALAVYU – DIGITAL YODHA | IT & Technology</title>
+
+<meta name="description" content="EKALAVYU DIGITAL YODHA is an IT startup based in Pali, Rajasthan. Website development, Android app development, software solutions and digital product development.">
+<meta name="keywords" content="EKALAVYU, Digital Yodha, Aegis Voice, DigiProfiles, Parshd, IT Company Pali Rajasthan, Website Development, Android App Development, Software Development, iStart Rajasthan">
+<meta name="author" content="Manish Prajapat">
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="EKALAVYU – DIGITAL YODHA">
+<meta property="og:description" content="Building Digital Products. Creating Technology Solutions.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/logo/logo.png">
+
+<link rel="icon" type="image/png" href="assets/images/logo/favicon.png">
+<link rel="apple-touch-icon" href="assets/images/logo/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#0B120D;
+  --bg2:#111B13;
+  --card:#172319;
+  --green:#24B86B;
+  --orange:#FF8A32;
+  --yellow:#FFD447;
+  --white:#F5F7EE;
+  --muted:#B3BDAF;
+  --border:rgba(255,255,255,.10);
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+html{
+  scroll-behavior:smooth;
+  scroll-padding-top:90px;
+}
+
+body{
+  font-family:Inter,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--white);
+  line-height:1.7;
+}
+
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+button,input,select,textarea{font:inherit}
+
+.container{
+  width:min(1160px,92%);
+  margin:auto;
+}
+
+.section{padding:90px 0}
+
+.muted{color:var(--muted)}
+
+.eyebrow{
+  color:var(--green);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+
+.gradient{
+  background:linear-gradient(100deg,var(--green),var(--orange),var(--yellow));
+  background-clip:text;
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+.section-head{
+  text-align:center;
+  margin-bottom:48px;
+}
+
+.section-head h2{
+  font-size:clamp(29px,4vw,43px);
+  line-height:1.2;
+  margin:12px 0;
+}
+
+.section-head p{
+  max-width:650px;
+  margin:auto;
+  color:var(--muted);
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  padding:13px 21px;
+  border-radius:9px;
+  font-size:13px;
+  font-weight:800;
+  transition:.25s;
+  cursor:pointer;
+  border:1px solid transparent;
+}
+
+.btn:hover{transform:translateY(-3px)}
+
+.btn-primary{
+  background:linear-gradient(100deg,var(--green),var(--yellow));
+  color:#07130A;
+}
+
+.btn-orange{
+  background:var(--orange);
+  color:#211006;
+}
+
+.btn-outline{
+  border-color:var(--border);
+  color:white;
+}
+
+.btn-outline:hover{
+  border-color:var(--green);
+  color:var(--green);
+}
+
+/* TOP BAR */
+
+.topbar{
+  background:#101A11;
+  border-bottom:1px solid var(--border);
+  color:#c3cfbd;
+  font-size:12px;
+  padding:8px 0;
+}
+
+.topbar .container{
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+/* HEADER */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(11,18,13,.96);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border);
+}
+
+.nav{
+  min-height:76px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.brand img{
+  width:47px;
+  height:47px;
+  object-fit:contain;
+  border-radius:10px;
+}
+
+.brand strong{
+  font-size:19px;
+  letter-spacing:1px;
+  display:block;
+}
+
+.brand small{
+  font-size:9px;
+  letter-spacing:3px;
+  color:var(--yellow);
+  display:block;
+}
+
+.navlinks{
+  display:flex;
+  align-items:center;
+  gap:20px;
+  font-size:12px;
+  font-weight:600;
+  color:#d5dfce;
+}
+
+.navlinks a:hover{color:var(--yellow)}
+
+.menu-btn{
+  display:none;
+  background:transparent;
+  border:1px solid var(--border);
+  color:white;
+  padding:8px 12px;
+  border-radius:8px;
+  font-size:20px;
+}
+
+/* HERO */
+
+.hero{
+  min-height:620px;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  background:
+    radial-gradient(ellipse at 75% 30%,rgba(36,184,107,.19),transparent 45%),
+    radial-gradient(ellipse at 10% 85%,rgba(255,138,50,.10),transparent 40%);
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  align-items:center;
+  gap:55px;
+  padding:85px 0;
+}
+
+.hero h1{
+  font-size:clamp(43px,6.4vw,76px);
+  line-height:1.07;
+  margin:20px 0;
+}
+
+.hero p{
+  color:var(--muted);
+  font-size:16px;
+  max-width:590px;
+}
+
+.hero-actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:30px;
+}
+
+.hero-tags{
+  display:flex;
+  gap:9px;
+  flex-wrap:wrap;
+  margin-top:28px;
+}
+
+.tag{
+  border:1px solid var(--border);
+  background:#ffffff08;
+  padding:7px 11px;
+  border-radius:30px;
+  font-size:10px;
+  color:#d3dfcb;
+}
+
+.hero-image{
+  padding:22px;
+  border-radius:25px;
+  background:linear-gradient(145deg,#1c3020,#101a11);
+  border:1px solid var(--border);
+  box-shadow:0 30px 90px #0005;
+}
+
+.hero-image img{
+  width:100%;
+  max-height:420px;
+  object-fit:contain;
+  border-radius:12px;
+}
+
+/* TRUST STRIP */
+
+.trustbar{
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  background:#101A11;
+}
+
+.trust-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  text-align:center;
+}
+
+.trust-item{
+  padding:21px 10px;
+  border-right:1px solid var(--border);
+}
+
+.trust-item:last-child{border:0}
+
+.trust-item strong{
+  display:block;
+  color:var(--yellow);
+  font-size:14px;
+}
+
+.trust-item span{
+  font-size:11px;
+  color:var(--muted);
+}
+
+/* ABOUT */
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:35px;
+  align-items:center;
+}
+
+.panel{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px;
+}
+
+.panel h3{
+  font-size:23px;
+  margin-bottom:12px;
+}
+
+.panel p{
+  font-size:14px;
+  color:var(--muted);
+  margin-bottom:12px;
+}
+
+.founder-img{
+  width:100%;
+  height:350px;
+  object-fit:cover;
+  background:#172319;
+  border-radius:13px;
+  margin-bottom:18px;
+}
+
+.info-row{
+  padding:10px 0;
+  border-bottom:1px solid var(--border);
+  font-size:13px;
+}
+
+.info-row span{
+  color:var(--green);
+  font-weight:700;
+}
+
+/* SERVICES */
+
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:17px;
+}
+
+.service-card{
+  padding:25px;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  transition:.25s;
+}
+
+.service-card:hover,
+.work-card:hover,
+.other-project:hover{
+  transform:translateY(-5px);
+  border-color:var(--green);
+}
+
+.service-icon{
+  font-size:30px;
+  margin-bottom:14px;
+}
+
+.service-card h3{
+  font-size:17px;
+  margin-bottom:8px;
+}
+
+.service-card p{
+  font-size:12px;
+  color:var(--muted);
+}
+
+/* PORTFOLIO */
+
+.categories{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:30px;
+}
+
+.category-btn{
+  background:#172319;
+  color:#d5e1d1;
+  border:1px solid var(--border);
+  padding:9px 15px;
+  border-radius:30px;
+  font-size:11px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.category-btn.active,
+.category-btn:hover{
+  background:var(--green);
+  color:#07130A;
+  border-color:var(--green);
+}
+
+.work-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.work-card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  overflow:hidden;
+  transition:.25s;
+}
+
+.work-card img{
+  width:100%;
+  height:215px;
+  object-fit:cover;
+  background:#101a11;
+}
+
+.work-content{padding:20px}
+
+.work-content small{
+  color:var(--yellow);
+  font-size:10px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+.work-content h3{
+  font-size:18px;
+  margin:7px 0;
+}
+
+.work-content p{
+  font-size:12px;
+  color:var(--muted);
+}
+
+/* OTHER PROJECTS */
+
+.other-projects{
+  background:linear-gradient(135deg,#111d13,#191c10);
+  border-block:1px solid var(--border);
+}
+
+.other-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+
+.other-project{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  min-height:245px;
+  padding:28px;
+  background:#172319;
+  border:1px solid var(--border);
+  border-radius:17px;
+  transition:.25s;
+}
+
+.project-label{
+  color:var(--orange);
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.other-project h3{
+  font-size:27px;
+  margin:12px 0 7px;
+}
+
+.other-project p{
+  color:var(--muted);
+  font-size:13px;
+  margin-bottom:20px;
+}
+
+.project-link{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  color:var(--yellow);
+  font-weight:800;
+  font-size:13px;
+}
+
+/* AEGIS */
+
+.aegis-section{
+  background:linear-gradient(130deg,#142419,#101810);
+  border-block:1px solid var(--border);
+}
+
+.aegis-grid{
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:45px;
+  align-items:center;
+}
+
+.aegis-poster{
+  width:100%;
+  max-height:560px;
+  object-fit:contain;
+  border-radius:15px;
+  background:#090f0b;
+}
+
+.feature-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:11px;
+  margin:23px 0;
+}
+
+.feature{
+  background:#ffffff08;
+  border:1px solid var(--border);
+  border-radius:11px;
+  padding:14px;
+  font-size:12px;
+}
+
+.feature strong{
+  display:block;
+  color:var(--yellow);
+  margin-bottom:3px;
+}
+
+/* SCREENSHOTS */
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:17px;
+}
+
+.shot{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:14px;
+  overflow:hidden;
+}
+
+.shot img{
+  width:100%;
+  height:290px;
+  object-fit:contain;
+  background:#050a06;
+  cursor:zoom-in;
+}
+
+.shot-info{padding:14px}
+
+.shot-info h3{font-size:13px}
+
+.shot-info p{
+  font-size:11px;
+  color:var(--muted);
+  margin-top:3px;
+}
+
+/* ACHIEVEMENTS */
+
+.achievement-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+
+.achievement{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:23px;
+}
+
+.achievement h3{
+  font-size:18px;
+  margin-bottom:8px;
+}
+
+.achievement p{
+  font-size:13px;
+  color:var(--muted);
+}
+
+.achievement img{
+  width:100%;
+  height:250px;
+  object-fit:contain;
+  background:#080f09;
+  border-radius:10px;
+  margin-top:15px;
+}
+
+/* ENQUIRY */
+
+.enquiry{
+  background:linear-gradient(130deg,#152419,#11180f);
+  border-block:1px solid var(--border);
+}
+
+.enquiry-grid{
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:35px;
+  align-items:start;
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+
+.field{
+  display:flex;
+  flex-direction:column;
+  gap:7px;
+}
+
+.field.full{grid-column:1/-1}
+
+.field label{
+  font-size:11px;
+  color:#d0ddc9;
+  font-weight:700;
+}
+
+.field input,
+.field select,
+.field textarea{
+  width:100%;
+  padding:13px;
+  background:#0a130b;
+  color:white;
+  border:1px solid var(--border);
+  border-radius:8px;
+  outline:none;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus{
+  border-color:var(--green);
+}
+
+.field textarea{
+  min-height:120px;
+  resize:vertical;
+}
+
+.field select option{background:#101a11}
+
+.form-note{
+  font-size:11px;
+  color:var(--muted);
+  margin-top:12px;
+}
+
+/* CONTACT */
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.contact-line{
+  padding:14px 0;
+  border-bottom:1px solid var(--border);
+  font-size:13px;
+  overflow-wrap:anywhere;
+}
+
+.contact-line strong{
+  color:var(--yellow);
+  margin-right:8px;
+}
+
+.social-link{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+}
+
+.social-link svg{
+  width:20px;
+  height:20px;
+}
+
+/* FOOTER */
+
+footer{
+  border-top:1px solid var(--border);
+  padding:28px 0;
+  color:var(--muted);
+  font-size:11px;
+}
+
+footer .container{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+/* WHATSAPP FLOAT */
+
+.float-wa{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  z-index:90;
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  background:#25d366;
+  color:#052b15;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:27px;
+  box-shadow:0 7px 25px #0007;
+}
+
+/* IMAGE PREVIEW */
+
+.lightbox{
+  position:fixed;
+  inset:0;
+  background:#000e;
+  z-index:300;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+
+.lightbox img{
+  max-width:95vw;
+  max-height:88vh;
+  object-fit:contain;
+}
+
+.lightbox button{
+  position:absolute;
+  top:20px;
+  right:25px;
+  width:42px;
+  height:42px;
+  border:0;
+  border-radius:50%;
+  font-size:25px;
+  cursor:pointer;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:850px){
+
+  .menu-btn{display:block}
+
+  .navlinks{
+    display:none;
+    position:absolute;
+    top:76px;
+    left:0;
+    right:0;
+    padding:20px;
+    background:#0c170d;
+    border-bottom:1px solid var(--border);
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .navlinks.show{display:flex}
+
+  .hero-grid,
+  .about-grid,
+  .aegis-grid,
+  .enquiry-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero{min-height:auto}
+
+  .hero-grid{padding:65px 0}
+
+  .hero-image{
+    max-width:540px;
+    margin:auto;
+  }
+
+  .services-grid,
+  .work-grid,
+  .gallery{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:560px){
+
+  .section{padding:65px 0}
+
+  .services-grid,
+  .work-grid,
+  .gallery,
+  .achievement-grid,
+  .contact-grid,
+  .other-grid{
+    grid-template-columns:1fr;
+  }
+
+  .feature-grid,
+  .form-grid{
+    grid-template-columns:1fr;
+  }
+
+  .field.full{grid-column:auto}
+
+  .trust-item{padding:15px 5px}
+
+  .trust-item strong{font-size:12px}
+
+  .trust-item span{font-size:9px}
+
+  .hero h1{font-size:44px}
+
+  .shot img{height:310px}
+
+  .founder-img{height:290px}
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+  <div class="container">
+    <span>📍 Pali, Rajasthan, India</span>
+    <span>iStart Rajasthan Registered · MSME Registered</span>
+  </div>
+</div>
+
+<!-- HEADER -->
+
+<header>
+  <nav class="nav container">
+
+    <a class="brand" href="#home">
+      <img src="assets/images/logo/logo.png" alt="EKALAVYU Logo">
+      <div>
+        <strong>EKALAVYU</strong>
+        <small>DIGITAL YODHA</small>
+      </div>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
+
+    <div class="navlinks" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#other-projects">Other Projects</a>
+      <a href="#aegis">Aegis Voice</a>
+      <a href="#enquiry">Enquiry</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+  </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+  <div class="container hero-grid">
+
+    <div>
+      <div class="eyebrow">Independent IT & Technology Startup</div>
+
+      <h1>
+        Building The
+        <span class="gradient">Digital Future.</span>
+      </h1>
+
+      <p>
+        We transform ideas into digital products.
+        EKALAVYU – DIGITAL YODHA works in website development,
+        mobile app development, software solutions and technology innovation.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">Explore Our Work ↗</a>
+        <a href="#enquiry" class="btn btn-outline">Start Your Project</a>
+      </div>
+
+      <div class="hero-tags">
+        <span class="tag">Website Development</span>
+        <span class="tag">Android Apps</span>
+        <span class="tag">Software Solutions</span>
+        <span class="tag">PWA Development</span>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img
+        src="assets/images/apps/aegis-voice/poster.jpg"
+        alt="Aegis Voice – EKALAVYU Product"
+        onerror="this.style.display='none'"
+      >
+
+      <div style="padding:14px 5px 3px">
+        <div class="eyebrow">Featured Product</div>
+        <h3 style="margin-top:5px">Aegis Voice</h3>
+        <p class="muted" style="font-size:12px">
+          An emergency safety application developed by EKALAVYU.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TRUST -->
+
+<div class="trustbar">
+  <div class="container trust-grid">
+
+    <div class="trust-item">
+      <strong>iStart Rajasthan</strong>
+      <span>Registered Startup</span>
+    </div>
+
+    <div class="trust-item">
+      <strong>MSME Registered</strong>
+      <span>Business Registration</span>
+    </div>
+
+    <div class="trust-item">
+      <strong>Pali, Rajasthan</strong>
+      <span>India</span>
+    </div>
+
+  </div>
+</div>
+
+<!-- ABOUT -->
+
+<section class="section" id="about">
+  <div class="container">
+
+    <div class="section-head">
+      <div class="eyebrow">Know Our Startup</div>
+      <h2>About <span class="gradient">EKALAVYU</span></h2>
+      <p>
+        Technology, creativity and innovation come together
+        to build useful digital solutions.
+      </p>
+    </div>
+
+    <div class="about-grid">
+
+      <div class="panel">
+        <h3>Who We Are</h3>
+
+        <p>
+          EKALAVYU – DIGITAL YODHA is an IT startup based in Pali,
+          Rajasthan. We focus on developing websites, mobile applications,
+          software and digital products.
+        </p>
+
+        <p>
+          Our vision is to turn practical ideas into technology-driven
+          solutions through innovation, development and continuous improvement.
+        </p>
+
+        <div class="info-row"><span>Startup Name:</span> EKALAVYU – DIGITAL YODHA</div>
+        <div class="info-row"><span>Location:</span> Pali, Rajasthan, India</div>
+        <div class="info-row"><span>Startup Recognition:</span> iStart Rajasthan</div>
+        <div class="info-row"><span>Registration:</span> MSME Registered</div>
+        <div class="info-row"><span>Industry:</span> Information Technology</div>
+      </div>
+
+      <div class="panel">
+
+        <img
+          class="founder-img"
+          src="assets/images/startup/owner.jpg"
+          alt="Manish Prajapat – Founder"
+          onerror="this.src='assets/images/startup/founder.jpg'"
+        >
+
+        <div class="eyebrow">Founder & Developer</div>
+        <h3 style="margin-top:7px">Manish Prajapat</h3>
+        <p>Founder – EKALAVYU DIGITAL YODHA</p>
+        <p>Pali, Rajasthan, India</p>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+
+<section class="section" id="services">
+  <div class="container">
+
+    <div class="section-head">
+      <div class="eyebrow">Our Expertise</div>
+      <h2>IT & <span class="gradient">Development Services</span></h2>
+      <p>
+        Technology services focused on building modern digital
+        experiences and products.
+      </p>
+    </div>
+
+    <div class="services-grid">
+
+      <article class="service-card">
+        <div class="service-icon">🌐</div>
+        <h3>Website Development</h3>
+        <p>Business websites, portfolio websites, landing pages and responsive web platforms.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">📱</div>
+        <h3>Android App Development</h3>
+        <p>Mobile application development with practical features and user-friendly interfaces.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">⚙️</div>
+        <h3>Software Development</h3>
+        <p>Custom software and digital systems designed around specific project requirements.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">🚀</div>
+        <h3>PWA Development</h3>
+        <p>Progressive web applications with app-like experiences across supported devices.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">🎨</div>
+        <h3>UI / UX Design</h3>
+        <p>Clean, modern and responsive interfaces for websites and mobile applications.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">☁️</div>
+        <h3>Firebase & Cloud Solutions</h3>
+        <p>Cloud-connected application features, authentication and database integrations.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+
+<section class="section" id="work">
+  <div class="container">
+
+    <div class="section-head">
+      <div class="eyebrow">Our Portfolio</div>
+      <h2>Explore Our <span class="gradient">Work</span></h2>
+      <p>Selected digital products, applications and development projects.</p>
+    </div>
+
+    <div class="categories" id="categoryFilters">
+      <button class="category-btn active" data-filter="all">All Projects</button>
+      <button class="category-btn" data-filter="apps">Mobile Apps</button>
+      <button class="category-btn" data-filter="websites">Websites</button>
+      <button class="category-btn" data-filter="software">Software</button>
+      <button class="category-btn" data-filter="digital">Digital Products</button>
+    </div>
+
+    <div class="work-grid" id="workGrid">
+
+      <article class="work-card" data-category="apps digital">
+
+        <img
+          src="assets/images/apps/aegis-voice/poster.jpg"
+          alt="Aegis Voice App"
+        >
+
+        <div class="work-content">
+          <small>Mobile App · Digital Product</small>
+          <h3>Aegis Voice</h3>
+          <p>
+            Voice-activated emergency safety application
+            developed by EKALAVYU.
+          </p>
+          <a href="aegis-voice.html" class="btn btn-outline" style="margin-top:15px">
+            View Project ↗
+          </a>
+        </div>
+
+      </article>
+
+      <!-- ADD YOUR FUTURE PROJECTS HERE -->
+
+    </div>
+  </div>
+</section>
+
+<!-- OTHER PROJECTS -->
+
+<section class="section other-projects" id="other-projects">
+  <div class="container">
+
+    <div class="section-head">
+      <div class="eyebrow">Our Digital Ecosystem</div>
+      <h2>Our <span class="gradient">Other Projects</span></h2>
+      <p>
+        Explore more digital platforms and projects
+        associated with our technology journey.
+      </p>
+    </div>
+
+    <div class="other-grid">
+
+      <a
+        class="other-project"
+        href="https://digiprofiles.in/"
+        target="_blank"
+        rel="noopener"
+      >
+        <div>
+          <div class="project-label">Digital Platform</div>
+          <h3>DigiProfiles</h3>
+          <p>
+            Explore DigiProfiles, our digital profile platform.
+          </p>
+        </div>
+
+        <div class="project-link">
+          Visit DigiProfiles.in ↗
+        </div>
+      </a>
+
+      <a
+        class="other-project"
+        href="https://parshd.in/"
+        target="_blank"
+        rel="noopener"
+      >
+        <div>
+          <div class="project-label">Other Digital Project</div>
+          <h3>Parshd</h3>
+          <p>
+            Explore our Parshd digital project and platform.
+          </p>
+        </div>
+
+        <div class="project-link">
+          Visit Parshd.in ↗
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- AEGIS VOICE -->
+
+<section class="section aegis-section" id="aegis">
+  <div class="container aegis-grid">
+
+    <div>
+      <img
+        class="aegis-poster"
+        src="assets/images/apps/aegis-voice/poster.jpg"
+        alt="Aegis Voice Application Poster"
+      >
+    </div>
+
+    <div>
+      <div class="eyebrow">Our Featured Innovation</div>
+
+      <h2 style="font-size:clamp(34px,5vw,48px);margin:12px 0">
+        Aegis <span class="gradient">Voice</span>
+      </h2>
+
+      <p class="muted">
+        Aegis Voice is an emergency safety application developed
+        by EKALAVYU. The project focuses on voice-based emergency
+        activation and safety-oriented mobile technology.
+      </p>
+
+      <div class="feature-grid">
+
+        <div class="feature">
+          <strong>Voice Activation</strong>
+          Voice-based trigger functionality
+        </div>
+
+        <div class="feature">
+          <strong>Emergency SOS</strong>
+          Emergency assistance workflow
+        </div>
+
+        <div class="feature">
+          <strong>Location</strong>
+          Location-related safety features
+        </div>
+
+        <div class="feature">
+          <strong>Emergency Contacts</strong>
+          Contact management
+        </div>
+
+        <div class="feature">
+          <strong>Evidence Security</strong>
+          Evidence-related functionality
+        </div>
+
+        <div class="feature">
+          <strong>Safety Technology</strong>
+          Digital safety platform
+        </div>
+
+      </div>
+
+      <div class="hero-actions">
+        <a href="aegis-voice.html" class="btn btn-primary">Explore Aegis Voice ↗</a>
+        <a href="aegis-voice-help.html" class="btn btn-outline">App Help & Support</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SCREENSHOTS -->
+
+<section class="section" id="screenshots">
+  <div class="container">
+
+    <div class="section-head">
+      <div class="eyebrow">Application Preview</div>
+      <h2>Aegis Voice <span class="gradient">Screenshots</span></h2>
+      <p>Explore the application interface and available screens.</p>
+    </div>
+
+    <div class="gallery" id="screenshotGallery"></div>
+
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+
+<section class="section" id="achievements">
+  <div class="container">
+
+    <div class="section-head">
+      <div class="eyebrow">Recognition & Milestones</div>
+      <h2>Our <span class="gradient">Achievements</span></h2>
+      <p>Startup registration and product recognition.</p>
+    </div>
+
+    <div class="achievement-grid">
+
+      <div class="achievement">
+        <h3>iStart Rajasthan</h3>
+        <p>EKALAVYU is registered with iStart Rajasthan.</p>
+
+        <img
+          src="assets/images/certificates/istart-registration.jpg"
+          alt="iStart Rajasthan Registration"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="achievement">
+        <h3>Aegis Voice – Bronze Rating</h3>
+        <p>
+          Aegis Voice received a Bronze rating with 44%,
+          as shared by the startup.
+        </p>
+
+        <img
+          src="assets/images/certificates/qrate-bronze.jpg"
+          alt="Aegis Voice Bronze Rating"
+          loading="lazy"
+        >
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT ENQUIRY -->
+
+<section class="section enquiry" id="enquiry">
+  <div class="container">
+
+    <div class="section-head">
+      <div class="eyebrow">Let's Build Something</div>
+      <h2>Start Your <span class="gradient">Project</span></h2>
+      <p>
+        Share your idea or requirements.
+        We will receive your enquiry through WhatsApp.
+      </p>
+    </div>
+
+    <div class="enquiry-grid">
+
+      <div>
+        <h3 style="font-size:25px;margin-bottom:12px">
+          Have a Digital Idea?
+        </h3>
+
+        <p class="muted" style="font-size:14px">
+          Tell us about your project. Whether it is a website,
+          Android application, software or a digital product,
+          share your requirements with us.
+        </p>
+
+        <div class="info-row" style="margin-top:22px">
+          <span>01.</span> Choose your project category
+        </div>
+
+        <div class="info-row">
+          <span>02.</span> Describe your requirements
+        </div>
+
+        <div class="info-row">
+          <span>03.</span> Send your enquiry on WhatsApp
+        </div>
+      </div>
+
+      <div class="panel">
+
+        <form id="projectForm">
+
+          <div class="form-grid">
+
+            <div class="field">
+              <label for="customerName">Your Name *</label>
+              <input id="customerName" required placeholder="Enter your name">
+            </div>
+
+            <div class="field">
+              <label for="customerPhone">Mobile Number</label>
+              <input id="customerPhone" type="tel" placeholder="Your contact number">
+            </div>
+
+            <div class="field">
+              <label for="projectCategory">Project Category *</label>
+
+              <select id="projectCategory" required>
+                <option value="">Select category</option>
+                <option>Website Development</option>
+                <option>Android App Development</option>
+                <option>Software Development</option>
+                <option>PWA Development</option>
+                <option>UI / UX Design</option>
+                <option>Firebase / Cloud Solutions</option>
+                <option>Other IT Project</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="projectBudget">Estimated Budget</label>
+
+              <select id="projectBudget">
+                <option value="Not decided">Not decided</option>
+                <option>Below ₹5,000</option>
+                <option>₹5,000 – ₹15,000</option>
+                <option>₹15,000 – ₹30,000</option>
+                <option>₹30,000 – ₹50,000</option>
+                <option>Above ₹50,000</option>
+              </select>
+            </div>
+
+            <div class="field full">
+              <label for="projectDetails">Project Requirements *</label>
+              <textarea
+                id="projectDetails"
+                required
+                placeholder="Describe your idea or project requirements..."
+              ></textarea>
+            </div>
+
+            <div class="field full">
+              <button class="btn btn-primary" type="submit">
+                Send Enquiry on WhatsApp ↗
+              </button>
+            </div>
+
+          </div>
+
+          <p class="form-note">
+            Your enquiry will open in WhatsApp.
+            Please review and send the message there.
+          </p>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="section" id="contact">
+  <div class="container">
+
+    <div class="section-head">
+      <div class="eyebrow">Connect With Us</div>
+      <h2>Help & <span class="gradient">Contact</span></h2>
+      <p>
+        For project enquiries, development services and application
+        support, connect with us.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="panel">
+        <h3>Contact Information</h3>
+
+        <div class="contact-line">
+          <strong>✉ Email:</strong>
+          <a href="mailto:Opnoraweb@gmail.com">Opnoraweb@gmail.com</a>
+        </div>
+
+        <div class="contact-line">
+          <strong>🌐 Website:</strong>
+          <a href="https://opnora.com/" target="_blank" rel="noopener">Opnora.com</a>
+        </div>
+
+        <div class="contact-line">
+          <strong>📍 Location:</strong>
+          Pali, Rajasthan, India
+        </div>
+
+        <div class="contact-line">
+          <a href="https://wa.me/918114434063" target="_blank" rel="noopener">
+            <strong>WhatsApp:</strong>8114434063 ↗
+          </a>
+        </div>
+
+        <div class="contact-line">
+
+          <a
+            class="social-link"
+            href="https://www.instagram.com/opnora.web/"
+            target="_blank"
+            rel="noopener"
+          >
+
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="18" cy="6" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+
+            Instagram: @opnora.web ↗
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="panel">
+        <h3>Help & Support</h3>
+
+        <p>
+          Need assistance with Aegis Voice or want to know
+          more about our digital products?
+        </p>
+
+        <div class="hero-actions">
+          <a href="aegis-voice-help.html" class="btn btn-primary">
+            Aegis Voice Help
+          </a>
+
+          <a href="aegis-voice-privacy-policy.html" class="btn btn-outline">
+            Privacy Policy
+          </a>
+
+          <a href="aegis-voice-delete-data.html" class="btn btn-outline">
+            Delete Account / Data
+          </a>
+        </div>
+
+        <p style="margin-top:20px;font-size:12px">
+          For general project enquiries, use the Project Enquiry form above.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="container">
+
+    <span>
+      © <span id="year"></span>
+      EKALAVYU – DIGITAL YODHA. All Rights Reserved.
+    </span>
+
+    <span>Technology & Development · Pali, Rajasthan</span>
+
+    <span>
+      Powered by
+      <a href="https://opnora.com/" target="_blank" rel="noopener">
+        Opnora.com
+      </a>
+    </span>
+
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+  class="float-wa"
+  href="https://wa.me/918114434063"
+  target="_blank"
+  rel="noopener"
+  aria-label="Chat on WhatsApp"
+>
+  ✆
+</a>
+
+<!-- IMAGE PREVIEW -->
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot preview">
+  <button id="closeLightbox" aria-label="Close image">×</button>
+  <img id="lightboxImage" src="" alt="Screenshot preview">
+</div>
+
+<script>
+
+/* ===================================
+   AEGIS VOICE SCREENSHOTS
+   Add unlimited screenshot entries.
+=================================== */
+
+const screenshots = [
+
+  {
+    image:"assets/images/apps/aegis-voice/screenshots/screenshot-1.jpg",
+    title:"Aegis Voice Dashboard",
+    description:"Main application dashboard."
+  },
+
+  {
+    image:"assets/images/apps/aegis-voice/screenshots/screenshot-2.jpg",
+    title:"Voice Activation",
+    description:"Voice activation interface."
+  },
+
+  {
+    image:"assets/images/apps/aegis-voice/screenshots/screenshot-3.jpg",
+    title:"Emergency SOS",
+    description:"Emergency assistance screen."
+  }
+
+  // Add more screenshots below.
+  // Example:
+  //
+  // {
+  //   image:"assets/images/apps/aegis-voice/screenshots/screenshot-4.jpg",
+  //   title:"Emergency Contacts",
+  //   description:"Manage emergency contacts."
+  // }
+
+];
+
+const gallery = document.getElementById("screenshotGallery");
+
+screenshots.forEach(shot => {
+
+  const card = document.createElement("article");
+  card.className = "shot";
+
+  const img = document.createElement("img");
+  img.src = shot.image;
+  img.alt = shot.title;
+  img.loading = "lazy";
+
+  img.addEventListener("click", () => {
+    document.getElementById("lightboxImage").src = shot.image;
+    document.getElementById("lightbox").style.display = "flex";
+  });
+
+  const info = document.createElement("div");
+  info.className = "shot-info";
+
+  const title = document.createElement("h3");
+  title.textContent = shot.title;
+
+  const description = document.createElement("p");
+  description.textContent = shot.description;
+
+  info.append(title,description);
+  card.append(img,info);
+
+  gallery.appendChild(card);
+
+});
+
+
+/* PORTFOLIO FILTER */
+
+document.querySelectorAll(".category-btn").forEach(button => {
+
+  button.addEventListener("click", () => {
+
+    document.querySelectorAll(".category-btn")
+      .forEach(b => b.classList.remove("active"));
+
+    button.classList.add("active");
+
+    const filter = button.dataset.filter;
+
+    document.querySelectorAll(".work-card").forEach(card => {
+
+      const categories = card.dataset.category.split(" ");
+
+      card.style.display =
+        filter === "all" || categories.includes(filter)
+        ? ""
+        : "none";
+
+    });
+
+  });
+
+});
+
+
+/* MOBILE NAVIGATION */
+
+document.getElementById("menuBtn").addEventListener("click", () => {
+
+  document.getElementById("navLinks").classList.toggle("show");
+
+});
+
+document.querySelectorAll(".navlinks a").forEach(link => {
+
+  link.addEventListener("click", () => {
+
+    document.getElementById("navLinks").classList.remove("show");
+
+  });
+
+});
+
+
+/* IMAGE LIGHTBOX */
+
+document.getElementById("closeLightbox").addEventListener("click", () => {
+
+  document.getElementById("lightbox").style.display = "none";
+
+});
+
+document.getElementById("lightbox").addEventListener("click", event => {
+
+  if(event.target.id === "lightbox"){
+    event.currentTarget.style.display = "none";
+  }
+
+});
+
+document.addEventListener("keydown", event => {
+
+  if(event.key === "Escape"){
+    document.getElementById("lightbox").style.display = "none";
+  }
+
+});
+
+
+/* PROJECT ENQUIRY TO WHATSAPP */
+
+document.getElementById("projectForm").addEventListener("submit", event => {
+
+  event.preventDefault();
+
+  const name = document.getElementById("customerName").value.trim();
+  const phone = document.getElementById("customerPhone").value.trim();
+  const category = document.getElementById("projectCategory").value;
+  const budget = document.getElementById("projectBudget").value;
+  const details = document.getElementById("projectDetails").value.trim();
+
+  const message =
+`Hello EKALAVYU – DIGITAL YODHA,
+
+I want to enquire about a project.
+
+Name: ${name}
+Mobile: ${phone || "Not provided"}
+Project Category: ${category}
+Estimated Budget: ${budget}
+
+Project Requirements:
+${details}
+
+Please contact me regarding this project.`;
+
+  const url =
+    "https://wa.me/918114434063?text=" +
+    encodeURIComponent(message);
+
+  window.open(url,"_blank");
+
+});
+
+
+/* CURRENT YEAR */
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
